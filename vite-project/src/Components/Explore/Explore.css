@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Explore Menu */
+.explore_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* Equivalent to 20px */
+    margin-top: 5rem; /* 80px */
+}
+
+.explore_menu h1 {
+    color: #000;
+    font-weight: 600;
+    margin-left: 5.625rem; /* 90px */
+}
+
+.text {
+    color: #666;
+    margin-left: 5.625rem; /* 90px */
+    max-width: 60%;
+    line-height: 1.5;
+}
+
+/* Menu List */
+.menu_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 1.25rem 5.625rem; /* 20px 90px */
+    flex-wrap: wrap; /* For better responsiveness */
+    gap: 1rem; /* Add spacing for wrapping elements */
+}
+
+.menu_list_item {
+    display: inline-block;
+    background-color: #ebe5e5;
+    width: 8.125rem; /* 130px */
+    height: 7.5rem; /* 120px */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu_list_item:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu_list_item .active {
+    padding: 2px;
+    border: 4px solid #fca120;
+    border-radius: 16px; /* Match with padding for visual balance */
+}
+
+.menu_list_item h2 {
+    margin-top: 1.25rem; /* 20px */
+    font-size: 3.4375rem; /* 55px */
+}
+
+.menu_list_item p {
+    margin-top: 0.5rem; /* Add spacing for text below icons */
+    font-size: 1rem; /* 16px */
+    color: #333;
+}
+
+Explore Menu Divider
+.explore_menu hr {
+    height: 2px;
+    background-color: #666;
+    margin: 0.625rem 0px; /* 10px 0px */
+    border: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .text {
+        margin-left: 2rem;
+        max-width: 90%;
+    }
+
+    .menu_list {
+        margin: 1rem 2rem;
+        justify-content: center;
+    }
+
+    .menu_list_item {
+        width: 7rem; /* Reduce size on smaller screens */
+        height: 6.5rem;
+    }
+
+    .menu_list_item h2 {
+        font-size: 2.5rem; /* Reduce icon size */
+    }
+
+    .explore_menu h1,
+    .text {
+        margin-left: 2rem; /* Reduce left margin for smaller screens */
+    }
+}

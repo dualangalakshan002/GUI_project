@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    color: black;
+}
+.nav_logo h2{
+    font-size: 1.5rem;
+}
+.link ul{
+    display: flex;
+    gap: 1rem;
+}
+.link ul li{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b1e0d;
+}
+.link ul li:hover{
+    color: gold;
+    cursor: pointer;
+}
+.nav_icon{
+    display: flex;
+    gap: 15px;
+}
