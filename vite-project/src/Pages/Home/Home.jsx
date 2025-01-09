@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../../Components/Hero/Hero';
 import Explore from '../../Components/Explore/Explore';
+import ProductList from '../../Components/ProductList/ProductList';
 
 const Home = () => {
 
@@ -9,6 +10,7 @@ const Home = () => {
     <div>
       <Hero />
       <Explore category={category} setCategory={setCategory}/>
+      <ProductList category={category}/>
     </div>
   );
 }

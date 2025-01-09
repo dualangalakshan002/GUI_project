@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './ProductContext.css';
+import { product_list } from '../../data';
 
-const ProductContext = () => {
+export const ProductContext = createContext();
+
+const ProductContextProvider = ({ children }) => {
+  const [products, setProducts] = useState(product_list);
+
   return (
-    <div>
-      
-    </div>
+    <ProductContext.Provider value={{ products }}>
+      {children}
+    </ProductContext.Provider>
   );
-}
+};
 
-export default ProductContext;
+export default ProductContextProvider;
