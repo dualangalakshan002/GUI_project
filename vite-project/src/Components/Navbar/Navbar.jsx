@@ -3,6 +3,10 @@ import './Navbar.css';
 import { BiCartAdd, BiUser } from 'react-icons/bi';
 
 const Navbar = () => {
+  window.addEventListener('scroll', function() {
+    const navebar = document.querySelector('.navbar')
+    navebar.classList.toggle('active', window.scrollY > 100)
+  });
   return (
     <div>
       <nav className="navbar">
