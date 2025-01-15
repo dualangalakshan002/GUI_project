@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 }
 
 .text {
-    color: #666;
+    color: black;
     margin-left: 5.625rem; /* 90px */
     max-width: 60%;
     line-height: 1.5;
@@ -75,7 +76,7 @@ body {
 
 Explore Menu Divider
 .explore_menu hr {
-    height: 2px;
+    height: 3px;
     background-color: #666;
     margin: 0.625rem 0px; /* 10px 0px */
     border: none;

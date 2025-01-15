@@ -1,31 +1,35 @@
 .navbar{
-    background-color: rgb(255, 187, 0);
+    background-color: orange;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 2rem;
     color: black;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px; 
 }
 .nav_logo h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-style: italic;
+    font-family: 'Gill Sans';
 }
 .link ul{
     display: flex;
     gap: 1rem;
 }
 .link ul li{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #2b1e0d;
 }
 .link ul li:hover{
-    color: gold;
+    color: white;
     cursor: pointer;
 }
 .nav_icon{
     display: flex;
     gap: 15px;
+    
 }
 .navbar.active{
     padding: 1.5rem;
@@ -37,3 +41,23 @@
     box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
     transition: 0.5s;
   } 
+  .nav_icon:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); Enhanced shadow on hover */
+}
+
+.icon {
+    font-size: 2rem; /* Makes the icons larger */
+    color: #000000; /* A pleasant green for the icons */
+    transition: color 0.2s ease, transform 0.2s ease; /*Smooth color change on hover */
+    cursor: pointer; /* Changes the cursor to pointer */
+}
+
+.icon.cart {
+    color: #000000; /* A different color for the cart icon */
+}
+
+.icon:hover {
+    color: #2196F3; /* Change to blue when hovered */
+    transform: scale(1.2); /* Enlarge slightly on hover */
+}
