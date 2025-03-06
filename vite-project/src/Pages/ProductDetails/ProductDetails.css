@@ -69,7 +69,7 @@
     border-radius: 5px;
 }
 .details_right .btn button:nth-child(1){
-    background-color: transparent;
+    background-color: black;
     border: 1px solid #000;
 }
 .details_right .btn button:nth-child(1):hover{
@@ -77,8 +77,13 @@
 }
 .details_right .btn button:nth-child(2){
     background-color: #000;
-    color: #fff;
+    color: #f7f1f1;
 }
+
+.details_right .btn button:nth-child(2):hover{
+        background-color: #fca120;
+    }
+
 .product_description{
     margin-top: 60px;
 }

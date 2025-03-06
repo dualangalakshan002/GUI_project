@@ -1,0 +1,44 @@
+.category_menu{
+    display: flex;
+    gap: 20px;
+    z-index: 3;
+    padding-top: 105vh;
+    height: 25vh;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.category_menu h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.category_menu p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 10px;
+    /* text-align: left; */
+    color: #000;
+}
+
+.category_menu_list{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    gap: 10px;
+    cursor: pointer;
+}
+.category_menu_list_item {
+    padding: 0.75rem 2.5rem; /* Balanced padding */
+    border: 2px solid #aa2222; /* Slightly thicker border */
+    border-radius: 12px; /* Subtle rounded corners */
+    font-weight: bold;
+    font-size: 1.1rem; /* More controlled font size */
+    text-align: center; /* Centers the text */
+    transition: all 0.3s ease-in-out; /* Smooth hover effects */
+}
+
+/* Hover effect */
+.category_menu_list_item:hover {
+    background-color: #aa2222;
+    color: #fff;
+    transform: scale(1.05); /* Slight enlargement on hover */
+}

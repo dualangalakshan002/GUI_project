@@ -30,9 +30,10 @@ const Navbar = () => {
         <div className="link">
           <ul>
             <li> <a href="/">Home</a> </li>
-            <li> <a href="/">Shop</a> </li>
+            <li> <a href="/shop">Shop</a> </li>
             <li> <a href="#">About</a> </li>
             <li> <a href="/contact">Contact</a> </li>
+            
           </ul>
         </div>
         <div className="nav_icon">
